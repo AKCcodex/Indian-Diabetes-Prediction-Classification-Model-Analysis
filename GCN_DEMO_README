@@ -1,0 +1,54 @@
+# 🧠 Diabetes Prediction using Graph Neural Networks
+
+This project implements a Graph Neural Network (GNN) model to predict diabetes using patient health data. Leveraging the power of graph-based learning via PyTorch Geometric, the model learns from similarity-based patient relationships.
+
+---
+
+## 📌 Project Highlights
+
+- 🎯 Task: Binary Classification — Diabetic vs Non-Diabetic
+- 📊 Dataset: PIMA Indian Diabetes Dataset
+- ✅ Final Accuracy: **84.9%**
+
+---
+
+## 🛠️ Technologies Used
+
+- 🐍 Python
+- 🔥 PyTorch & PyTorch Geometric
+- 📘 pandas
+- 📈 scikit-learn
+- 🔗 NetworkX
+
+---
+
+## ⚙️ Methodology
+
+1. **Data Preprocessing**
+   - Feature scaling using `StandardScaler`
+2. **Graph Construction**
+   - k-Nearest Neighbors (kNN) graph from patient feature vectors
+3. **Model Architecture**
+   - 2-layer GCN with ReLU activations
+   - Final linear layer for classification
+4. **Training**
+   - Loss: CrossEntropyLoss
+   - Optimizer: Adam
+
+---
+
+## 🧪 How to Run
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+Place diabetes.csv in the working directory.
+
+Run the model:
+
+python GCN_DEMO.py
+📈 Results
+Metric	Value
+Accuracy	84.9%
+Final Loss	~0.36
